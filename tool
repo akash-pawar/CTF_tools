@@ -140,3 +140,12 @@ RET - used to return form a function.
 1. ltrace
   > apt-get install ltrace
   
+2. strings crack_binary
+    > strings -e L crack_binary
+  
+3. xxd crackme_binary
+
+4. burpsuite- https://drive.google.com/open?id=1U-5b74_I6xNGxdAXCnfEO582l_zS5ys1
+
+
+
