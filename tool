@@ -102,8 +102,23 @@ http://ftp.riken.jp/Linux/linuxmint/packages/pool/import/s/sublime-text/sublime-
   > 7z e zipfile.zip (prompt will ask password)
   
 
- 
- -----------------------------------------------------------------------------------
+22. cryptcat
+
+    a) with wireshark lets filter "tcp.port == 7070"
+	    > now download raw of image.pcap
+
+	b) Then open a netcat client on localhost: 
+		> netcat localhost 7070 < crypted.file
+
+	c) And open a cryptcat listener on localhost: 
+		> cryptcat -l -k P@ssawordaya -p 7070 > decrypted.file
+
+	d) here you get decrypted image but there is nothing called as flag,
+	   > the md5sum of image is a flag.
+
+
+
+-----------------------------------------------------------------------------------
 
 
 REVERSE ENGINEERING
